@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+@category    DMC
+@package     DMC_Base
+@author      digital.manufaktur GmbH / Hannover, Germany
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="DMC_Base::dmc_menu" resource="DMC_Base::dmc" module="DMC_Base" title="DMC" sortOrder="80"/>
+        <add id="DMC_Base::dmc_base" resource="DMC_Base::dmc_base" module="DMC_Base" title="DMC" sortOrder="1" parent="DMC_Base::dmc_menu"/>
+
+        <add id="DMC_Base::system_config" resource="Magento_Config::config" action="adminhtml/system_config/edit/section/dmc_base" module="Magento_Config" title="Configuration" translate="title"  sortOrder="1" parent="DMC_Base::dmc_base"/>
+    </menu>
+</config>

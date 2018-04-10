@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+@category    DMC
+@package     DMC_Base
+@author      digital.manufaktur GmbH / Hannover, Germany
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="dmc" translate="label" sortOrder="1000">
+            <label><![CDATA[<span class='dmc-logo'>DMC</span>]]></label>
+        </tab>
+        <section id="dmc_base" translate="label" showInDefault="1" showInWebsite="1" showInStore="1" sortOrder="1">
+            <tab>dmc</tab>
+            <label>Base</label>
+            <resource>DMC_Base::config</resource>
+            <group id="log" translate="label" sortOrder="100" showInDefault="1" showInWebsite="1"
+                   showInStore="1">
+                <label>Log configuration</label>
+                <field id="enable" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1"
+                       showInStore="1">
+                    <label>Enable log</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

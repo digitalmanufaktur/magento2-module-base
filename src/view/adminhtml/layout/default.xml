@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+@category    DMC
+@package     DMC_Base
+@author      digital.manufaktur GmbH / Hannover, Germany
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="DMC_Base::css/style.css"/>
+    </head>
+</page>

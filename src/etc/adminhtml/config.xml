@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+@category    DMC
+@package     DMC_Base
+@author      digital.manufaktur GmbH / Hannover, Germany
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <dmc_base>
+            <log>
+                <enable>1</enable>
+            </log>
+        </dmc_base>
+    </default>
+</config>
